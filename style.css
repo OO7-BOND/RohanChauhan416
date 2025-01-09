@@ -728,8 +728,8 @@
       }
       .about-img img{
     
-        width: 34vw; /* Ensures the image container is square */
-        height: 34vw; /* Ensures the image container is square */
+        width: 72vw; /* Ensures the image container is square */
+        height: 72vw; /* Ensures the image container is square */
         border-radius: 50%;
           
     }
@@ -739,8 +739,8 @@
     }
     .home-img img{
     
-      width: 34vw; /* Ensures the image container is square */
-      height: 34vw; /* Ensures the image container is square */
+      width: 72vw; /* Ensures the image container is square */
+      height: 72vw; /* Ensures the image container is square */
       border-radius: 50%;
         
   }
