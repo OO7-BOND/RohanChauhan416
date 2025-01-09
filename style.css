@@ -1,4 +1,5 @@
-* {
+
+ *{
   margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -106,7 +107,7 @@
       }
      .home-img img{
       width: 22vw;
-      height: 22vw; /* Ensures the container is square */
+      height: 22vw ; /* Ensures the container is square */
       border-radius: 50%;
       object-fit: cover; /* Makes sure the image fits within the circular container */
       box-shadow: 0 0 25px var(--main-color);
@@ -712,3 +713,36 @@
       color: var(--main-color);
     }
     
+
+    /*Mobile Version*/
+    @media only screen and (max-width: 600px){
+      .header{
+        width: 600px;
+      }
+      .navbar {
+      display: none;
+      }
+      .about-img{
+        border-radius: 50%;
+    
+      }
+      .about-img img{
+    
+        width: 34vw; /* Ensures the image container is square */
+        height: 34vw; /* Ensures the image container is square */
+        border-radius: 50%;
+          
+    }
+    .home-img{
+      border-radius: 50%;
+  
+    }
+    .home-img img{
+    
+      width: 34vw; /* Ensures the image container is square */
+      height: 34vw; /* Ensures the image container is square */
+      border-radius: 50%;
+        
+  }
+ 
+  }
