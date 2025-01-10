@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -76,23 +76,90 @@
         </div>
     </section>
 
+
 	<section class="services" id="services">
-		<h2>My Services</h2>
-		<div class="services-container">
-		  <div class="services-box">
-			<div class="service-info">
-			  <h4>Video Editing</h4>
-			  <p>Professional video editing for various projects, ensuring high-quality and engaging content.</p>
+		<h2 class="section-heading">My <span class="highlight">Services</span></h2>
+		<div class="section-content">
+			<h4 class="video-editing-heading">My <span class="highlight">Projects</span></h4>
+			<p>Here are some of my recent video editing projects.</p>
+		</div>
+	
+			<div class="project-grid">
+				<!-- Horizontal video 1 -->
+				<div class="project horizontal">
+					<video class="about-video" muted autoplay loop controls>
+						<source src="IMMIGRATION S1 V1.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+					
+				</div>
+	
+				<!-- Vertical video 2 -->
+				<div class="project vertical">
+					<video class="about-video" muted autoplay loop controls>
+						<source src="OOKA X GARIMA FINAL.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+					
+				</div>
+	
+				<!-- Horizontal video 3 -->
+				<div class="project horizontal">
+					<video class="about-video" muted autoplay loop controls>
+						<source src="BYTE FITNESS S02 FINAL 2.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				
+				</div>
+	
+				<!-- Vertical video 4 -->
+				<div class="project vertical">
+					<video class="about-video" muted autoplay loop controls>
+						<source src="AVIAN S3 FINAL.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+					
+				</div>
 			</div>
-		  </div>
-		  <div class="services-box">
-			<div class="service-info">
-			  <h4>Web Design</h4>
-			  <p>Creating visually appealing and user-friendly websites tailored to your needs.</p>
-			</div>
-		  </div>
-		  
-	  </section>
+		</div>
+	</section>
+	
+	<script>
+	document.querySelectorAll('.about-video').forEach(video => {
+		// Set videos to loop, play them muted initially, and ensure they keep playing
+		video.loop = true;
+		video.muted = true;
+		video.play();
+	
+		// Unmute the video on mouseenter and ensure video continues playing
+		video.addEventListener('mouseenter', function() {
+			video.muted = false;
+		});
+	
+		// Mute the video on mouseleave but keep it playing
+		video.addEventListener('mouseleave', function() {
+			video.muted = true;
+		});
+	});
+	</script>
+	
+	
+	</section>
+	
+	
+		
+		</div>
+		<script>
+			document.getElementById('services-btn').addEventListener('click', function() {
+				document.getElementById('services-section').classList.toggle('active');
+				this.textContent = this.textContent === 'Show Projects' ? 'Hide Projects' : 'Show Projects';
+			});
+		</script>
+		
+	
+		
+	</section>
+	
 	  
 
 	 <!-- Contact Section -->
